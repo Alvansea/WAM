@@ -202,6 +202,7 @@ getAddonMetadata = (addonIdentifier) ->
       url: downloadPageURL
     }, (error, response) ->
       if error
+        console.log(error)
         return reject "Error getting Addon information for
                        #{addonIdentifier.yellow}"
 
